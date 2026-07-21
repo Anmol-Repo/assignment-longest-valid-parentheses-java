@@ -8,10 +8,9 @@ public class Solution {
         Stack<Integer> stack = new Stack<>();
         int max = 0;
 
-        // Sentinel value
+        // Initial boundary
         stack.push(-1);
-
-        for (int i = 0; i < s.length(); i++) {
+         for (int i = 0; i < s.length(); i++) {
 
             if (s.charAt(i) == '(') {
 
@@ -30,12 +29,14 @@ public class Solution {
                     max = Math.max(max, i - stack.peek());
 
                 }
-            }
+          }
         }
 
         return max;
     }
 
+
+  
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
