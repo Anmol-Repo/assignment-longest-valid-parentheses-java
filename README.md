@@ -8,7 +8,7 @@ Given a string containing only the characters `(` and `)`, return the length of 
 
 **Input**
 ```
-(()
+((()
 ```
 
 **Output**
